@@ -16,10 +16,10 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		72E260D6FB37A58920CA47AC /* Pods_MAPSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MAPSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D0F29E872640ED8CAC1C653 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		84DB734AEE4A667BE4D058BF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		7D0F29E872640ED8CAC1C653 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		84DB734AEE4A667BE4D058BF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		A7E2D678215304CB676B89D9 /* Pods-MAPSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAPSDK_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MAPSDK_Tests/Pods-MAPSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		B48B4847854CBCDAF2BCFEE2 /* MAPSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MAPSDK.podspec; path = ../MAPSDK.podspec; sourceTree = "<group>"; };
+		B48B4847854CBCDAF2BCFEE2 /* MAPSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MAPSDK.podspec; path = ../MAPSDK.podspec; sourceTree = "<group>"; };
 		F4732ED4CCDA22493E9386A4 /* Pods-MAPSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAPSDK_Tests.release.xcconfig"; path = "Target Support Files/Pods-MAPSDK_Tests/Pods-MAPSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,7 +95,6 @@
 				A7E2D678215304CB676B89D9 /* Pods-MAPSDK_Tests.debug.xcconfig */,
 				F4732ED4CCDA22493E9386A4 /* Pods-MAPSDK_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -131,12 +130,9 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
-					607FACCF1AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
-					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = N79BRTLS6S;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -147,6 +143,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -328,6 +325,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A7E2D678215304CB676B89D9 /* Pods-MAPSDK_Tests.debug.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				DEVELOPMENT_TEAM = N79BRTLS6S;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -350,6 +349,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F4732ED4CCDA22493E9386A4 /* Pods-MAPSDK_Tests.release.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				DEVELOPMENT_TEAM = N79BRTLS6S;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",

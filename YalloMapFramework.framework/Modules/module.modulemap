@@ -1,0 +1,11 @@
+framework module YalloMapFramework {
+  umbrella header "YalloMapFramework.h"
+
+  export *
+  module * { export * }
+}
+
+module YalloMapFramework.Swift {
+    header "YalloMapFramework-Swift.h"
+    requires objc
+}

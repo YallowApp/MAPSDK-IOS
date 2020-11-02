@@ -1,0 +1,22 @@
+{
+  "name": "MAPSDK",
+  "version": "0.1.0",
+  "summary": "A short description of MAPSDK.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/YallowApp/MAPSDK",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "YallowApp": "mohammad.a.rababah@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/YallowApp/MAPSDK.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "MAPSDK/Classes/**/*"
+}
