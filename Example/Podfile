@@ -1,0 +1,6 @@
+use_frameworks!
+target 'MAPSDK_Tests' do
+  pod 'MAPSDK', :path => '../'
+  
+  
+end
